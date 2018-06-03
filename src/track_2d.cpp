@@ -19,7 +19,7 @@ void track_2d::interpolate_track(unsigned int steps) {
 
     //convert the vector of track points to two arrays
     for(track_point_2d point : track_2d::track_basis) {
-        step_vector.push_back((double)point.step);
+        step_vector.push_back(point.step);
         angle_vector.push_back(point.angle);
     }
 
@@ -28,7 +28,7 @@ void track_2d::interpolate_track(unsigned int steps) {
 
     for(unsigned int i = 0; i < steps + 1; i++) {
         interpStep = i;
-        interpAngle = gsl_spline_eval(trackSpline, (double)i, trackAccel);
+        interpAngle = gsl_spline_eval(trackSpline, i, trackAccel);
         track_point_2d trackPoint(interpStep, interpAngle);
         track_interp.push_back(trackPoint);
     }
