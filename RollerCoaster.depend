@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1527989128 source:/home/jack/Documents/RollerCoaster/main.cpp
+	<iostream>
+	<vector>
+	"track_point_2d.h"
+	"track_2d.h"
+
+1527988903 source:/home/jack/Documents/RollerCoaster/src/track_point_2d.cpp
+	<iostream>
+	"track_point_2d.h"
+
+1527989113 /home/jack/Documents/RollerCoaster/include/track_point_2d.h
+
+1527988019 source:/home/jack/Documents/RollerCoaster/src/track_2d.cpp
+	<vector>
+	<gsl/gsl_spline.h>
+	"track_point_2d.h"
+	"track_2d.h"
+
+1527989112 /home/jack/Documents/RollerCoaster/include/track_2d.h
+
