@@ -19,8 +19,8 @@ void track_2d::interpolate_track(unsigned int steps) {
 
     //convert the vector of track points to two arrays
     for(track_point_2d point : track_2d::track_basis) {
-        step_vector.push_back((double)point.GetStep());
-        angle_vector.push_back(point.GetAngle());
+        step_vector.push_back((double)point.step);
+        angle_vector.push_back(point.angle);
     }
 
     //create the spline with the track data
