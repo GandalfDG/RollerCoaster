@@ -1,13 +1,13 @@
 #include <vector>
+#include <cmath>
 #include <iostream>
 #include <gsl/gsl_spline.h>
 
-#include "track_point_2d.h"
 #include "track_2d.h"
 
 track_2d::track_2d(std::vector<track_point_2d> track_basis): track_basis(track_basis) {}
 
-void track_2d::interpolate_track(unsigned int steps) {
+void track_2d::interpolate_track() {
     std::vector<double> step_vector;
     std::vector<double> angle_vector;
 
@@ -26,7 +26,7 @@ void track_2d::interpolate_track(unsigned int steps) {
     //create the spline with the track data
     gsl_spline_init(trackSpline, step_vector.data(), angle_vector.data(), track_basis.size());
 
-    for(unsigned int i = 0; i < steps + 1; i++) {
+    for(unsigned int i = 0; i < track_basis.back().step + 1; i++) {
         interpStep = i;
         interpAngle = gsl_spline_eval(trackSpline, i, trackAccel);
         track_point_2d trackPoint(interpStep, interpAngle);
@@ -37,6 +37,21 @@ void track_2d::interpolate_track(unsigned int steps) {
     //free interpolator resources
     gsl_interp_accel_free(trackAccel);
     gsl_spline_free(trackSpline);
+}
+
+
+//convert the vector of angles and steps to x and y coordinates
+void track_2d::generate_drawable() {
+    track_drawable.push_back(track_draw_point_2d(0.0, 0.0));
+
+    for(unsigned int i = 1; i < track_interp.size(); i++) {
+        double x, y;
+        x = track_drawable[i-1].x + std::cos(track_interp[i-1].angle);
+        y = track_drawable[i-1].y + std::sin(track_interp[i-1].angle);
+        track_drawable.push_back(track_draw_point_2d(x, y));
+
+        std::cout << track_drawable[i].x << "    " << track_drawable[i].y << std::endl;
+    }
 }
 
 void track_2d::print_track() {

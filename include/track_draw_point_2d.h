@@ -5,7 +5,7 @@
 class track_draw_point_2d
 {
     public:
-        track_draw_point_2d();
+        track_draw_point_2d(double, double);
         virtual ~track_draw_point_2d();
 
         double x;
