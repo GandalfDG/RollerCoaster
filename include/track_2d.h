@@ -18,6 +18,7 @@ class track_2d
         std::vector<track_point_2d> track_basis;
         std::vector<track_point_2d> track_interp;
         std::vector<track_draw_point_2d> track_drawable;
+        void normalize_drawable();
 };
 
 #endif // TRACK_2D_H

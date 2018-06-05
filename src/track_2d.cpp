@@ -1,6 +1,7 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
+#include <limits>
 #include <gsl/gsl_spline.h>
 
 #include "track_2d.h"
@@ -59,6 +60,26 @@ void track_2d::generate_drawable() {
         y = track_drawable[i-1].y - std::sin(track_interp[i-1].angle * PI / 180.0);
         track_drawable.push_back(track_draw_point_2d(x, y));
     }
+
+    normalize_drawable();
+}
+
+void track_2d::normalize_drawable() {
+    //TODO this should be the maximum float value
+    double minval = 100000000000;
+
+    //find the minimum y value
+    for(unsigned int i = 0; i < track_drawable.size(); i++) {
+        if(track_drawable[i].y < minval) {
+            minval = track_drawable[i].y;
+        }
+    }
+
+    std::cout << "minval = " << minval << std::endl;
+    //move points up or down so the minimum value is zero
+    for(unsigned int i = 0; i < track_drawable.size(); i++) {
+        track_drawable[i].y -= minval;
+    }
 }
 
 void track_2d::print_track() {
@@ -71,7 +92,11 @@ void track_2d::print_track() {
     }
 
     //print the x/y coordinates of the track
-    std::cout << "step    angle" << std::endl;
+    std::cout << "x       y    " << std::endl;
     std::cout << "-------------" << std::endl;
+
+    for(track_draw_point_2d point : track_drawable) {
+        point.printPoint();
+    }
 
 }

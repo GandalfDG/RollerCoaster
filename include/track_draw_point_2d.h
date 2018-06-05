@@ -8,6 +8,8 @@ class track_draw_point_2d
         track_draw_point_2d(double, double);
         virtual ~track_draw_point_2d();
 
+        void printPoint();
+
         double x;
         double y;
 
