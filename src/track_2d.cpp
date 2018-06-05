@@ -42,12 +42,13 @@ void track_2d::interpolate_track() {
 
 //convert the vector of angles and steps to x and y coordinates
 void track_2d::generate_drawable() {
+    const double PI = 4 * std::atan(1);
     track_drawable.push_back(track_draw_point_2d(0.0, 0.0));
 
     for(unsigned int i = 1; i < track_interp.size(); i++) {
         double x, y;
-        x = track_drawable[i-1].x + std::cos(track_interp[i-1].angle);
-        y = track_drawable[i-1].y + std::sin(track_interp[i-1].angle);
+        x = track_drawable[i-1].x + std::cos(track_interp[i-1].angle * PI / 180.0);
+        y = track_drawable[i-1].y - std::sin(track_interp[i-1].angle * PI / 180.0);
         track_drawable.push_back(track_draw_point_2d(x, y));
 
         std::cout << track_drawable[i].x << "    " << track_drawable[i].y << std::endl;

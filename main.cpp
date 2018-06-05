@@ -7,9 +7,9 @@
 
 int main() {
     track_point_2d point1(0, 0);
-    track_point_2d point2(30, 60);
-    track_point_2d point3(38, 0);
-    track_point_2d point4(50, -10);
+    track_point_2d point2(30, 5.0);
+    track_point_2d point3(38, 6.0);
+    track_point_2d point4(50, 6.0);
 
     std::vector<track_point_2d> track {point1, point2, point3, point4};
     std::vector<track_draw_point_2d> track_drawable;
