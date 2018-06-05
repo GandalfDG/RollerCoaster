@@ -17,8 +17,7 @@ int main() {
     std::vector<track_draw_point_2d> track_drawable;
 
     track_2d coolTrack(track);
-    coolTrack.interpolate_track();
-    coolTrack.generate_drawable();
+    coolTrack.process_track();
     coolTrack.print_track();
 
     return 0;

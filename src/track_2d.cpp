@@ -10,6 +10,11 @@ track_2d::track_2d(std::vector<track_point_2d> track_basis): track_basis(track_b
 
 }
 
+void track_2d::process_track() {
+    interpolate_track();
+    generate_drawable();
+}
+
 void track_2d::interpolate_track() {
     std::vector<double> step_vector;
     std::vector<double> angle_vector;
