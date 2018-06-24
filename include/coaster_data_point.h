@@ -24,7 +24,7 @@ class coaster_data_point
 
         // GPS
         double Latitude, Longitude, Speed;
-        coaster_data_point();
+        coaster_data_point(double time, double gFx, double gFz, double ax, double ay, double az, double wx, double wy, double wz, double Bx, double By, double Bz, double Azimuth, double Pitch, double Roll);
         ~coaster_data_point();
     protected:
     private:
