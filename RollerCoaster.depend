@@ -30,3 +30,34 @@
 	<iostream>
 	"track_point_2d.h"
 
+1529546251 source:/home/jack/RollerCoaster/main.cpp
+	<iostream>
+	<vector>
+	"track_point_2d.h"
+	"track_draw_point_2d.h"
+	"track_2d.h"
+
+1529546251 /home/jack/RollerCoaster/include/track_point_2d.h
+
+1529546251 /home/jack/RollerCoaster/include/track_draw_point_2d.h
+
+1529546251 /home/jack/RollerCoaster/include/track_2d.h
+	"track_point_2d.h"
+	"track_draw_point_2d.h"
+
+1529546251 source:/home/jack/RollerCoaster/src/track_2d.cpp
+	<vector>
+	<cmath>
+	<iostream>
+	<limits>
+	<gsl/gsl_spline.h>
+	"track_2d.h"
+
+1529546251 source:/home/jack/RollerCoaster/src/track_draw_point_2d.cpp
+	<iostream>
+	"track_draw_point_2d.h"
+
+1529546251 source:/home/jack/RollerCoaster/src/track_point_2d.cpp
+	<iostream>
+	"track_point_2d.h"
+
