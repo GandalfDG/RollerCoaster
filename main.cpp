@@ -15,7 +15,7 @@ int main() {
 
 
 
-    /*
+
     track_point_2d point1(0, 0);
     track_point_2d point2(20, 80);
     track_point_2d point3(38, 90);
@@ -29,7 +29,7 @@ int main() {
     track_2d coolTrack(track);
     coolTrack.process_track();
     coolTrack.print_track();
-    */
+
 
     return 0;
 }
