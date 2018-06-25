@@ -30,11 +30,11 @@
 	<iostream>
 	"track_point_2d.h"
 
-1529890897 source:/home/jack/RollerCoaster/main.cpp
+1529892350 source:/home/jack/RollerCoaster/main.cpp
 	<iostream>
 	<fstream>
 	<vector>
-	"csv.h"
+	"rapidcsv.h"
 	"track_point_2d.h"
 	"track_draw_point_2d.h"
 	"track_2d.h"
@@ -62,4 +62,17 @@
 1529546251 source:/home/jack/RollerCoaster/src/track_point_2d.cpp
 	<iostream>
 	"track_point_2d.h"
+
+1525449270 /home/jack/RollerCoaster/include/rapidcsv.h
+	<algorithm>
+	<cassert>
+	<cmath>
+	<fstream>
+	<iostream>
+	<map>
+	<sstream>
+	<string>
+	<typeinfo>
+	<vector>
+	<BaseTsd.h>
 

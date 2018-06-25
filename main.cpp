@@ -2,21 +2,18 @@
 #include <fstream>
 #include <vector>
 
-#include "csv.h"
+#include "rapidcsv.h"
 #include "track_point_2d.h"
 #include "track_draw_point_2d.h"
 #include "track_2d.h"
 
 int main() {
+    rapidcsv::Document doc("/home/jack/RollerCoaster/Test_multi_record.csv", rapidcsv::LabelParams(0, -1));
+    for(unsigned int i = 0; i < doc.GetColumnCount() - 1; i++) {
+        std::cout << doc.GetColumnLabel(i) << ", ";
+    }
 
-    io::CSVReader<1> reader("Test_multi_record.csv");
-    reader.read_header(io::ignore_extra_column, "gFx");
 
-    std::ifstream csvfile;
-    csvfile.open("Test_multi_record.csv");
-    std::string line;
-    csvfile >> line;
-    std::cout << line << std::endl;
 
     /*
     track_point_2d point1(0, 0);
