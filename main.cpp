@@ -9,16 +9,14 @@
 
 int main() {
 
-    io::CSVReader<2> reader("Test_multi_record.csv");
-    reader.read_header(io::ignore_extra_column, "time", "gFx");
-    std::cout << reader.next_line();
-
+    io::CSVReader<1> reader("Test_multi_record.csv");
+    reader.read_header(io::ignore_extra_column, "gFx");
 
     std::ifstream csvfile;
     csvfile.open("Test_multi_record.csv");
     std::string line;
     csvfile >> line;
-    std::cout << line;
+    std::cout << line << std::endl;
 
     /*
     track_point_2d point1(0, 0);
