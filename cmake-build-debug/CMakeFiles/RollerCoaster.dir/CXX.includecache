@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/coaster_data_set.h
+map
+-
+vector
+-
+
 ../include/rapidcsv.h
 algorithm
 -
@@ -55,6 +61,14 @@ track_draw_point_2d.h
 /home/jack/RollerCoaster/track_draw_point_2d.h
 track_2d.h
 /home/jack/RollerCoaster/track_2d.h
+coaster_data_set.h
+/home/jack/RollerCoaster/coaster_data_set.h
+
+/home/jack/RollerCoaster/src/coaster_data_set.cpp
+coaster_data_set.h
+/home/jack/RollerCoaster/src/coaster_data_set.h
+rapidcsv.h
+/home/jack/RollerCoaster/src/rapidcsv.h
 
 /home/jack/RollerCoaster/src/track_2d.cpp
 vector

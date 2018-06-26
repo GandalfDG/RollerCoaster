@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/RollerCoaster/main.cpp" "/home/jack/RollerCoaster/cmake-build-debug/CMakeFiles/RollerCoaster.dir/main.cpp.o"
+  "/home/jack/RollerCoaster/src/coaster_data_set.cpp" "/home/jack/RollerCoaster/cmake-build-debug/CMakeFiles/RollerCoaster.dir/src/coaster_data_set.cpp.o"
   "/home/jack/RollerCoaster/src/track_2d.cpp" "/home/jack/RollerCoaster/cmake-build-debug/CMakeFiles/RollerCoaster.dir/src/track_2d.cpp.o"
   "/home/jack/RollerCoaster/src/track_draw_point_2d.cpp" "/home/jack/RollerCoaster/cmake-build-debug/CMakeFiles/RollerCoaster.dir/src/track_draw_point_2d.cpp.o"
   "/home/jack/RollerCoaster/src/track_point_2d.cpp" "/home/jack/RollerCoaster/cmake-build-debug/CMakeFiles/RollerCoaster.dir/src/track_point_2d.cpp.o"

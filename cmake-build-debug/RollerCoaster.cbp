@@ -88,6 +88,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jack/RollerCoaster/include/coaster_data_set.h">
+			<Option target="RollerCoaster"/>
+		</Unit>
 		<Unit filename="/home/jack/RollerCoaster/include/rapidcsv.h">
 			<Option target="RollerCoaster"/>
 		</Unit>
@@ -101,6 +104,9 @@
 			<Option target="RollerCoaster"/>
 		</Unit>
 		<Unit filename="/home/jack/RollerCoaster/main.cpp">
+			<Option target="RollerCoaster"/>
+		</Unit>
+		<Unit filename="/home/jack/RollerCoaster/src/coaster_data_set.cpp">
 			<Option target="RollerCoaster"/>
 		</Unit>
 		<Unit filename="/home/jack/RollerCoaster/src/track_2d.cpp">

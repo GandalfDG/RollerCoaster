@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RollerCoaster.dir/src/track_2d.cpp.o"
   "CMakeFiles/RollerCoaster.dir/src/track_draw_point_2d.cpp.o"
   "CMakeFiles/RollerCoaster.dir/src/track_point_2d.cpp.o"
+  "CMakeFiles/RollerCoaster.dir/src/coaster_data_set.cpp.o"
   "RollerCoaster.pdb"
   "RollerCoaster"
 )

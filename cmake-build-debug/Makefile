@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/RollerCoaster.dir/build.make CMakeFiles/RollerCoaster.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/coaster_data_set.o: src/coaster_data_set.cpp.o
+
+.PHONY : src/coaster_data_set.o
+
+# target to build an object file
+src/coaster_data_set.cpp.o:
+	$(MAKE) -f CMakeFiles/RollerCoaster.dir/build.make CMakeFiles/RollerCoaster.dir/src/coaster_data_set.cpp.o
+.PHONY : src/coaster_data_set.cpp.o
+
+src/coaster_data_set.i: src/coaster_data_set.cpp.i
+
+.PHONY : src/coaster_data_set.i
+
+# target to preprocess a source file
+src/coaster_data_set.cpp.i:
+	$(MAKE) -f CMakeFiles/RollerCoaster.dir/build.make CMakeFiles/RollerCoaster.dir/src/coaster_data_set.cpp.i
+.PHONY : src/coaster_data_set.cpp.i
+
+src/coaster_data_set.s: src/coaster_data_set.cpp.s
+
+.PHONY : src/coaster_data_set.s
+
+# target to generate assembly for a file
+src/coaster_data_set.cpp.s:
+	$(MAKE) -f CMakeFiles/RollerCoaster.dir/build.make CMakeFiles/RollerCoaster.dir/src/coaster_data_set.cpp.s
+.PHONY : src/coaster_data_set.cpp.s
+
 src/track_2d.o: src/track_2d.cpp.o
 
 .PHONY : src/track_2d.o
@@ -243,6 +270,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/coaster_data_set.o"
+	@echo "... src/coaster_data_set.i"
+	@echo "... src/coaster_data_set.s"
 	@echo "... src/track_2d.o"
 	@echo "... src/track_2d.i"
 	@echo "... src/track_2d.s"

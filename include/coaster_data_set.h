@@ -11,10 +11,9 @@
 
 class coaster_data_set {
 public:
-    std::map<std::string, std::vector<double>> data {
-        {"time", new std::vector<double>},
+    explicit coaster_data_set(std::string csv_path);
+    std::map<std::string, std::vector<double>> data;
 
-    };
 };
 
 
