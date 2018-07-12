@@ -32,7 +32,6 @@
 *.app
 
 # Random junk
-*.txt
 bin/
 
 CMakeCache.txt
